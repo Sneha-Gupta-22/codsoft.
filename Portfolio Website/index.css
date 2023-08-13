@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+    outline: none;
+    scroll-behavior:smooth;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+body{
+    background-color: black;
+    color: wheat;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 2rem 9%;
+   background:black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index:100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: wheat;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: wheat;
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(41, 195, 195);
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img{
+    width: 35vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+.home-content h3{
+     font-size: 3.2rem;
+     font-weight: 700;
+}
+span{
+    color:rgb(41, 195, 195) ;
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight:700;
+    line-height: 1.3;
+}
+.home-content p{
+    font-size: 1.6rem;
+}
+.btn1{
+    display:inline-block;
+    padding: 1rem 2.8rem;
+    background:rgb(72, 209, 209);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(rgb(85, 187, 187));
+    font-size: 1.6rem;
+    color: wheat;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.btn{
+    display:inline-block;
+    padding: 1rem 2.8rem;
+    background:rgb(72, 209, 209);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(rgb(85, 187, 187));
+    font-size: 1.6rem;
+    color: wheat;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background:black;
+}
+.about-img img{
+    width: 35vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 5.5rem;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.projects h2{
+    margin-bottom: 5rem;
+}
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.projects-container .projects-box{
+    flex: 1 1 30rem;
+    background: black;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid rgb(72, 209, 209);
+    transition: .5s ease;
+}
+.projects-container .projects-box:hover{
+    border-color:wheat;
+    transform: scale(1.02);
+}
+.projects-box h3{
+    font-size: 2.9rem;
+}
+.projects-box p{
+    font-size: 1.8rem;
+    margin: 1rem 0 3rem;
+}
+.skills{
+    background: black;
+}
+.skills h2{
+    margin-bottom: 4rem;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.skills-container .skills-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem wheat;
+    overflow: hidden;
+    display: flex;
+    height: 200px;
+    width: 400px;
+}
+.skills-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), var(rgb(72, 209, 209)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.4rem;
+   
+}
+.skills-box:hover{
+    transform: scale(1.1);
+}
+.skills-box:hover h4{
+    color: rgb(72, 209, 209);
+}
+.skills-box h4{
+    font-size: 4rem;
+}
+.skills-box p{
+    font-size: 1.4rem;
+    margin: .3rem 0 1rem;
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:white;
+    background: rgb(82, 79, 79);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+     margin-top: 2rem;
+     cursor: pointer;
+}
